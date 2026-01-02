@@ -1,16 +1,16 @@
+import { downloadCV } from "@/helpers/downloadCV";
 import { iconos } from "../data/iconos";
 
 export const Main = () => {
   return (
     <div className=" w-full flex justify-center items-center  px-5 py-2 ">
       <div className=" w-[80%] flex flex-col justify-center items-center gap-3   px-3 py-2 ">
-        <a
-          href="/public/cv/alexis-alvarez-cv.pdf"
-          download
+        <button
+          onClick={downloadCV}
           className="w-[70%] text-darkGreen bg-lightGray  font-bold  p-2 rounded-md laptop:w-[20%] cursor-pointer hover:bg-lightGreen hover:text-lightGray transition-colors"
         >
           Descargar CV
-        </a>
+        </button>
         <h2 className=" text-2xl text-lightGreen p-2 laptop:text-5xl font-bold ">Software Developer</h2>
         <h2 className=" text-2xl text-lightGray  p-2 laptop:text-5xl font-bold">Alexis Alvarez</h2>
         <h3 className="text-xl text-gris p-2 laptop:text-2xl font-bold capitalize ">
